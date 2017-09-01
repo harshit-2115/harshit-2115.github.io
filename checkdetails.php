@@ -20,7 +20,8 @@ else{
 				$clientid = $rs['Password'];
 				if (mysqli_query($conn, $sql) ){
 					if ($clientid === $Password) {
-						include 'dashboard.php';	
+						setcookie("useremail", $Email, time() + (86400 * 30), "/"); // 86400 = 1 day
+						header('Location: dashboard.php');
 					}
 					else
 					{

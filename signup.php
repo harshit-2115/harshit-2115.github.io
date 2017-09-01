@@ -22,7 +22,14 @@ else{
 				// Write Sql commands
 				$sql = "INSERT INTO userinfo (Name, Email, Password,Phone) VALUES ( '$name' , '$Email' , '$Password', '$Phone' )";
 				if (mysqli_query($conn, $sql)) {
-				    echo "<h1>User Registered Successfully<h1>";
+				     mkdir("images/$Email",0777, true);
+				     echo '<script type="text/javascript">
+							     alert("User Registered Successfully");
+							     </script>'
+							;
+				     include 'dashboard.php';
+
+
 				} else {
 				    echo "Error in connecting to DB " . mysqli_error($conn);
 				}
@@ -31,3 +38,4 @@ else{
 ?>
 </body>
 </html>
+
