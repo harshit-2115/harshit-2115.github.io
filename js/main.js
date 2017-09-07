@@ -1,4 +1,0 @@
-function shiftform()
-{
-	alert("Hello");
-}
