@@ -5,48 +5,114 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 	<!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<style type="text/css">
-		.container-fluid{
-			margin: 0px;
-			padding: 0px;
-		}
-		header{
-			height: 106px;
-			background-color: #1f2746;
-		}
-		#openfront{
-			height: 485px;
-			background-color: white;
-		}
-		#advantages{
-			height:630px;
-			background-color: #1f2746;
-		}
-		#support{
-			height: 480px;
-			background-color: white;
-		}
-		#popular{
-			height:1000px;
-			background-color: white;
-			box-shadow: 0px 0px 1px black;
-		}
-		footer{
-			background-color: #1f2746;
-			height: 600px;
-		}
-	</style>
+	<script type="text/javascript">
+		$(function() {
+			  $('.col-sm-3>.glyphicon').hover(function() {
+			 		 $(this).animate({"font-size": '60px'});
+
+			  }, function() {
+			   $(this).animate({"font-size": '50px'});
+			    
+			  });
+			});
+	</script>
 </head>
 <body>
 	<div class="container-fluid">
-		<header></header>
-		<div class="row" id="openfront"></div>
-		<div class="row" id="advantages"></div>
+		<header class="row">
+			<div class="col-sm-3"></div>
+			<div class="col-sm-3"></div>
+			<div class="col-sm-6" style="height: 100%;">
+				
+					<ul class="nav justify-content-center" style="height: 100%;width: 100%">
+					  <li class="nav-item text-center">
+					    <a class="nav-link active" href="#">Home &nbsp <span class="glyphicon glyphicon-chevron-down"></span></a>
+					  </li>
+					  <li class="nav-item text-center">
+					    <a class="nav-link" href="#">About&nbsp <span class="glyphicon glyphicon-chevron-down"></span></a>
+					  </li>
+					  <li class="nav-item text-center">
+					    <a class="nav-link" href="#">Blog&nbsp <span class="glyphicon glyphicon-chevron-down"></span></a>
+					  </li>
+					  <li class="nav-item text-center">
+					    <a class="nav-link" href="#">Pages&nbsp <span class="glyphicon glyphicon-chevron-down"></span></a>
+					  </li>
+					  <li class="nav-item text-center">
+					    <a class="nav-link" href="#">Contacts&nbsp <span class="glyphicon glyphicon-chevron-down"></span></a>
+					  </li>
+
+					</ul>
+				
+			</div>
+		</header>
+		<!-- Header Ends Here -->
+		<div class="row" id="openfront">
+		<div class="col-sm-2"></div>
+
+		<div class="col-sm-8">
+		<ul class="nav nav-pills">
+			  <li><a href="#">Home</a></li>
+			  <li><a href="#">Menu 1</a></li>
+			  <li><a href="#">Menu 2</a></li>
+			</ul>
+			<div id="form"></div>
+		</div>	
+		</div>
+		<!-- OpenFront Ends Here -->
+		<div class="row" id="advantages">
+		<div class="row">
+			<h5 class="text-center">Why People Choose Us?</h5>
+			<h1 class="text-center">Our Advantages</h1>
+			<p class="text-center">______</p>
+			</div>
+			<br><br><br><br>
+			<div class="row" style="height: 350px;">
+				<div class="col-sm-3">
+				
+				<span class="glyphicon glyphicon-edit text-center"></span>
+				<h5 class="text-center">The Most Reliable Airlines</h5>
+				<p class="text-center" style="color:#22a9bf; ">_____</p>
+				<p class="text-center ">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolo</p>
+				</div>
+
+				<div class="col-sm-3">
+				
+				<span class="glyphicon glyphicon-plane text-center"></span>
+				<h5 class="text-center">The Most Reliable Airlines</h5>
+				<p class="text-center" style="color:#22a9bf; ">_____</p>
+				<p class="text-center ">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolo</p>
+				</div>
+
+				<div class="col-sm-3">
+				
+				<span class="glyphicon glyphicon-search text-center"></span>
+				<h5 class="text-center">The Most Reliable Airlines</h5>
+				<p class="text-center" style="color:#22a9bf; ">_____</p>
+				<p class="text-center ">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolo</p>
+				</div>
+
+
+				<div class="col-sm-3">
+				
+				<span class="glyphicon glyphicon-user text-center"></span>
+				<h5 class="text-center">The Most Reliable Airlines</h5>
+				<p class="text-center" style="color:#22a9bf; ">_____</p>
+				<p class="text-center ">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolo</p>
+				</div>
+				
+			</div>
+		</div>
+		<!-- Advantages end here -->
 		<div class="row" id="support"></div>
 		<div class="row" id="popular"></div>
 		<footer></footer>
