@@ -1,18 +1,270 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html>
 <head>
-	<title>Welcome</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<!-- jQuery library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-	<!-- Latest compiled JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<meta charset="utf-8">
+<title>Hotel Verona</title>
+<link rel="stylesheet" href="css/main-css.css" type="text/css">
+<link rel="shortcut icon" type="favicon" href="Images/logo.png">
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+<script type="text/javascript" src="js/modernizr.custom.92244.js"></script>
 </head>
-<body>
-	<h1>Doing something great</h1>
+<body style="background-image: url('Images/hotel.jpg');">
+<section id="container">
+  <article id="slider">
+    <article id="home" class="left">
+      <article id="navbar">
+        <article id="border">
+          <div id="logo">
+            <h1>VERONA</h1>
+            <h4>The Best Hotel</h4>
+            <img src="Images/logo.png"> </div>
+          <nav id="menu">
+            <ul>
+              <li><a id="nhome" href="#" onClick="myfunc(this.id)"> HOME </a></li>
+              <li><a id="nabout" href="#" onClick="myfunc(this.id)"> ABOUT US </a></li>
+              <li><a id="nreservation" href="#" onClick="myfunc(this.id)"> RESERVATION </a></li>
+              <li><a id="nrooms" href="#" onClick="myfunc(this.id)"> ROOMS AND SUITES </a></li>
+              <li><a id="npackages" href="#" onClick="myfunc(this.id)"> PACKAGES </a></li>
+              <li><a id="ncontact" href="#" onClick="myfunc(this.id)"> CONTACT </a></li>
+            </ul>
+          </nav>
+          <p> VERONA 2012 | Privacy Policy</p>
+        </article>
+        <!-- BORDER END HERE --> 
+      </article>
+      <!-- NAVBAR END HERE --> 
+    </article>
+    <!-- HOME END HERE -->
+    <article id="about" class="left">
+      <article id="navbar1">
+        <article id="border">
+          <div id="logo">
+            <h1>VERONA</h1>
+            <h4>The Best Hotel</h4>
+            <img src="Images/logo.png"> </div>
+          <nav id="menu">
+            <ul>
+              <li><a id="nhome" href="#" onClick="myfunc(this.id)"> HOME </a></li>
+              <li><a id="nabout" href="#" onClick="myfunc(this.id)"> ABOUT US </a></li>
+              <li><a id="nreservation" href="#" onClick="myfunc(this.id)"> RESERVATION </a></li>
+              <li><a id="nrooms" href="#" onClick="myfunc(this.id)"> ROOMS AND SUITES </a></li>
+              <li><a id="npackages" href="#" onClick="myfunc(this.id)"> PACKAGES </a></li>
+              <li><a id="ncontact" href="#" onClick="myfunc(this.id)"> CONTACT </a></li>
+            </ul>
+          </nav>
+          <p> VERONA 2012 | Privacy Policy</p>
+        </article>
+        <!-- BORDER END HERE --> 
+      </article>
+      <!-- Navbar1 END HERE -->
+      <article id="main">
+        <article id="welcome">
+          <h1>Welcome To Our Site!</h1>
+          <figure> <img src="Images/small/food2.jpg"> </figure>
+          <figcaption> Welcome to our Hotel! With locations worldwide, Verona Hotels has accommodations for your every need. From hosting small meetings, to orchestrating large group events. </figcaption>
+        </article>
+        <article id="aboutlower">
+          <article class="left">
+            <h1>Restaurant</h1>
+            <figure> <img src="Images/small/rest2.jpg"> </figure>
+            <figcaption>Verona Group more than five decades ago has brought about a paradigm change in people's mind about "eating out".</figcaption>
+            <div> <a href="#">Read More</a> </div>
+          </article>
+          <article class="left" style=" margin-left:24px">
+            <h1>Our History</h1>
+            <figure> <img src="Images/small/hotel1.jpg"> </figure>
+            <figcaption>Verona Group more than five decades ago has brought about a paradigm change in people's mind about "eating out".</figcaption>
+            <div> <a href="#">Read More</a> </div>
+          </article>
+        </article>
+      </article>
+      <!-- ABOUT MAIN END HERE --> 
+    </article>
+    <!-- ABOUT US END HERE -->
+    <article id="reservation" class="left">
+      <article id="main">
+        <h1>Reservation</h1>
+        <form id="rform" onSubmit="formfunc1(event)" method="post">
+          <label>First Name:</label>
+          <input type="text" required>
+          <br>
+          <label>Last Name:</label>
+          <input type="text" required>
+          <br>
+          <label>Phone:</label>
+          <input type="number" required>
+          <br>
+          <label>Persons:</label>
+          <input  id="defaultSlider" type="range" min="1" max="5" step="1" value="1">
+          <span id="currentValue">0</span><br>
+          <label>Rooms:</label>
+          <input  id="defaultSlider1" type="range" min="1" max="5" step="1" value="1">
+          <span id="currentValue1">0</span><br>
+          <label>Email:</label>
+          <input type="email" required>
+          <br>
+          <label>Message:</label>
+          <textarea></textarea>
+          <br>
+          <input type="reset">
+          <input type="submit">
+        </form>
+        <article id="phone">
+          <h1>Phones</h1>
+          <p>Contact Our Departments anytime when you are in need.</p>
+          <article class="left">
+            <h3>For Information and Accommodation</h3>
+            +1959 603 2859 </article>
+          <article class="left">
+            <h3>For Food and Restaurant</h3>
+            +1959 603 2859 </article>
+        </article>
+      </article>
+    </article>
+    <!-- RESERVATION END HERE -->
+    <article id="rooms" class="left">
+      <article id="main">
+      <img id="lightbox" src="Images/small/hotel.jpg">
+      <h1>Our Rooms</h1>
+        <article id="arc1">
+          <figure class="left"> <img src="Images/key.png"> </figure>
+          <p> <font size="2px">The Deluxe Queen Size Rooms</font><br>
+            The hotel's spacious Deluxe rooms are one of the best rooms. </p>
+          <div class="imgwrapper">
+            <figure>
+              <div style="margin-left:0px"> <img src="Images/small/rooms1.jpg" /> </div>
+              <div> <img src="Images/small/rooms2.jpg" /> </div>
+              <div> <img src="Images/small/rooms3.jpg" /> </div>
+              <div> <img src="Images/small/rooms4.jpg" /> </div>
+              <div> </div>
+            </figure>
+          </div>
+          <div id="left"><img src="Images/left.png" width="25" height="25"/></div>
+          <div id="right"><img src="Images/right.png" width="25" height="25"/></div>
+        </article>
+        <article id="arc2">
+          <figure class="left"> <img src="Images/key.png"> </figure>
+          <p> <font size="2px">The Deluxe Twin Size Rooms</font><br>
+            The hotel's spacious Deluxe rooms are one of the best rooms. </p>
+          <div class="imgwrapper">
+            <figure>
+              <div style="margin-left:0px"> <img src="Images/small/rooms5.jpg" /> </div>
+              <div> <img src="Images/small/rooms4.jpg" /> </div>
+              <div> <img src="Images/small/rooms7.jpg" /> </div>
+              <div> <img src="Images/small/rooms8.jpg" /> </div>
+              <div> </div>
+            </figure>
+          </div>
+          <div id="left"><img src="Images/left.png" width="25" height="25"/></div>
+          <div id="right"><img src="Images/right.png" width="25" height="25"/></div>
+        </article>
+        <article id="arc3">
+          <figure class="left"> <img src="Images/key.png"> </figure>
+          <p> <font size="2px">Ocean Front Sole Rooms</font><br>
+            The hotel's spacious Deluxe rooms are one of the best rooms. </p>
+          <div class="imgwrapper">
+            <figure>
+              <div style="margin-left:0px"> <img src="Images/small/rooms8.jpg" /> </div>
+              <div> <img src="Images/small/rooms9.jpg" /> </div>
+              <div> <img src="Images/small/rooms6.jpg" /> </div>
+              <div> <img src="Images/small/rooms1.jpg" /> </div>
+              <div> </div>
+            </figure>
+          </div>
+          <div id="left"><img src="Images/left.png" width="25" height="25"/></div>
+          <div id="right"><img src="Images/right.png" width="25" height="25"/></div>
+        </article>
+      </article>
+    </article>
+    <!--ROOMS END HERE-->
+    <article id="packages" class="left">
+      <article id="main">
+      <h1>Packages</h1>
+        <article>
+          <h1>Spa Packages</h1>
+          <figure> <img src="Images/small/spa1.jpg" /> </figure>
+          <p>Cosme-DermatTM Treatment + Fusion Therapy + Papaya sesame body wrap + Spa Manicure + Spa Pedicure</p>
+          <ul>
+            <li>Haircut & Blow Dry</li>
+            <li>Spa Facial + Aromatherapy</li>
+            <li>Head Massage + Salt Scrub</li>
+            <li>Manicure + Salt scrub Pedicure</li>
+            <li> Blow Dry + Pedicure</li>
+          </ul>
+        </article>
+        <article>
+          <h1>Summer Packages</h1>
+          <figure> <img src="Images/small/summer1.jpg" /> </figure>
+          <p>Cosme-DermatTM Treatment + Fusion Therapy + Papaya sesame body wrap + Spa Manicure + Spa Pedicure</p>
+          <ul>
+            <li>Haircut & Blow Dry</li>
+            <li>Spa Facial + Aromatherapy</li>
+            <li>Head Massage + Salt Scrub</li>
+            <li>Manicure + Salt scrub Pedicure</li>
+            <li> Blow Dry + Pedicure</li>
+          </ul>
+        </article>
+        <article>
+          <h1>Family Packages</h1>
+          <figure> <img src="Images/small/family.jpg" /> </figure>
+          <p>Cosme-DermatTM Treatment + Fusion Therapy + Papaya sesame body wrap + Spa Manicure + Spa Pedicure</p>
+          <ul>
+            <li>Haircut & Blow Dry</li>
+            <li>Spa Facial + Aromatherapy</li>
+            <li>Head Massage + Salt Scrub</li>
+            <li>Manicure + Salt scrub Pedicure</li>
+            <li> Blow Dry + Pedicure</li>
+          </ul>
+        </article>
+        <article>
+          <h1>Romance Packages</h1>
+          <figure> <img src="Images/small/romance package.jpg" /> </figure>
+          <p>Cosme-DermatTM Treatment + Fusion Therapy + Papaya sesame body wrap + Spa Manicure + Spa Pedicure</p>
+          <ul>
+            <li>Haircut & Blow Dry</li>
+            <li>Spa Facial + Aromatherapy</li>
+            <li>Head Massage + Salt Scrub</li>
+            <li>Manicure + Salt scrub Pedicure</li>
+            <li> Blow Dry + Pedicure</li>
+          </ul>
+        </article>
+      </article>
+    </article>
+    <!-- PACKAGES END HERE -->
+    <article id="contact" class="left">
+      <article id="main">
+        <h1>How to Find Us</h1>
+        <div id="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d448182.5073807705!2d77.0932634!3d28.646965499999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1394449321593" width="600" height="450" frameborder="0" style="border:0"></iframe>
+        </div>
+        <p>Centrally located in the heart of the UK, Nottingham Conferences’ four venues are in easy reach of both Nottingham train station and East Midlands Airport.</p>
+        <h3><strong>8901 Marmora Road, Glasglow, Washington DC</strong></h3>
+        <p style="font-size:11px"> 9863 - 9867 Mill Road, <br>
+          Cambridge, MG09 99HT. <br>
+          Freephone: +1 800 559 6580 <br>
+          Telephone: +1 800 559 6580 <br>
+          FAX:		 +1 800 559 6580 <br>
+        </p>
+        <form onSubmit="formfunc(event)" method="post" id="feedback">
+          <h1>Feedback</h1>
+          <label>Name:</label>
+          <input type="text" name="name" required />
+          <label>Email:</label>
+          <input type="email" name="email" required />
+          <label>Message:</label>
+          <textarea name="message"></textarea>
+          <input type="reset" value="Clear"/>
+          <input type="submit" value="Send Message" />
+        </form>
+      </article>
+    </article>
+    <!-- CONTACT END HERE --> 
+  </article>
+  <!-- SLIDER END HERE --> 
+</section>
+<!-- CONTAINER END HERE -->
 </body>
+<!-- BODY END HERE -->
 </html>
